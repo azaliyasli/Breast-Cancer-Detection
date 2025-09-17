@@ -1,7 +1,7 @@
 # 🧬 Breast Cancer Classification Models
 
 ## 📌 Overview
-This project applies different **machine learning models** to the **Breast Cancer dataset**, predicting whether a tumor is **benign** or **malignant**.  
+This project applies different **machine learning models** to the **Breast Cancer dataset**, predicting a tumor's class.
 
 Each model is implemented in a **separate file** so you can compare their performance individually.
 
