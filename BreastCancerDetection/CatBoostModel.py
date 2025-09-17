@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import confusion_matrix
 from catboost import CatBoostClassifier
 
-df = pd.read_csv('Data.csv')
+df = pd.read_csv('breast_cancer.csv')
 X = df.iloc[:, 1:-1].values
 y = df.iloc[:, -1].values
 
@@ -26,4 +26,5 @@ print(cm)
 
 accuracies = cross_val_score(classifier, X_train, y_train, cv=10)
 print("Accuracy Mean: ", accuracies.mean())
+
 print("Accuracy Standard Deviation : ", accuracies.std())
